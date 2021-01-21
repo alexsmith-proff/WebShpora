@@ -1,0 +1,136 @@
+
+body{
+	font-family: 'Roboto', sans-serif;	
+	font-size: 14px;
+	color: #062726;
+	background-color: #fff;
+}
+h1, h2, h3, h4, h5, h6, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+h1{
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 56px;
+	color: #191A1C;
+}
+h2{
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	color: #191A1C;
+}
+h3{
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #191A1C;
+}
+ul,li{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+.header{
+	background-color: #102B3F;
+}
+
+
+.logo__img{
+	width: 150px;
+	height: auto;
+}
+
+.menu-header{
+	list-style: none;
+	height: 100%;
+}
+.menu-header__link{
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	color: #E2CFEA;
+	position: relative;
+}
+
+.menu-header__link:hover{
+	text-decoration: none;
+	color: #E2CFEA;
+}
+.menu-header__link:before{
+	display: block;
+	content: "";
+	position: absolute;
+	left: 20%;
+	right: 20%;
+	bottom: -8px;
+	border-bottom: 3px solid #A06CD5;
+	opacity: 0;
+	transition: opacity .15s ease-in-out;
+}
+.menu-header__link.active:before{
+	display: block;
+	content: "";
+	position: absolute;
+	left: 20%;
+	right: 20%;
+	bottom: -8px;
+	border-bottom: 3px solid #A06CD5;
+	opacity: 1;
+}
+.menu-header__link:hover:before{
+	opacity: 1;
+}
+
+
+.main__sidebar{
+	background-color: #E2CFEA;
+	height: 100vh;
+	border-right: 2px solid #A0A0A0;
+}
+.main__content{
+	background-color: #E2CFEA;
+	height: 100vh;
+}
+.main__sidebar-tree{
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+.main__sidebar-tree span:hover {
+      font-weight: bold;
+    }
+
+.main__sidebar-tree span {
+      cursor: pointer;
+    }
+
+.tree-item{
+	position: relative;
+}
+.tree-item:before{
+	display: block;
+	content: "+";
+	position: absolute;
+	top: 0;
+	left: -10px;
+}	
+.tree-item.active:before{
+	display: block;
+	content: "-";
+	position: absolute;
+	top: 0;
+	left: -10px;
+}	
+
+.tree-child{
+	padding-left: 20px;
+}    
